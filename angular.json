@@ -26,7 +26,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/loader.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-sales-dashboard"
+    }
+  },
+  "defaultProject": "angular-sales-dashboard",
+  "cli": {
+    "analytics": false
+  }
 }
