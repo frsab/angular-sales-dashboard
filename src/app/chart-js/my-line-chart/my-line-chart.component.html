@@ -9,3 +9,18 @@
     [plugins]="lineChartPlugins">
   </canvas>
 </div>
+<div *ngFor="let chartType of chartsTypes">
+  <div>{{chartType}}</div>
+  <div style="display: block;">
+    <canvas baseChart width="332%" height="25%"
+            [datasets]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [colors]="lineChartColors"
+            [legend]="lineChartLegend"
+            [chartType]="chartType"
+            [plugins]="lineChartPlugins">
+    </canvas>
+  </div>
+</div>
+

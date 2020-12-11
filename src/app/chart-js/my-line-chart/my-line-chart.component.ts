@@ -9,6 +9,7 @@ import { Color, Label } from 'ng2-charts';
 })
 export class MyLineChartComponent implements OnInit {
 
+  public chartsTypes: ChartType[] = ['line' , 'bar' , 'horizontalBar' , 'radar' , 'doughnut' , 'polarArea' , 'bubble' , 'pie' , 'scatter'];
   public lineChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
   ];
